@@ -1,14 +1,12 @@
 # Project-4
 
-Trivia Game
-
 Title: Trivia Game
 
-Description: This project will utilize **html, css, javascript** to create a _self-scoring_ trivia game
+Description: This project will utilize **html, css, javascript** to create a _self-scoring_ trivia game about random music trivia
 
-    HTML: list of questions, each answer is a button
-    JAVASCRIPT: event listeners to the correct button with a certain number of points attached to it
-    CSS: colorful game page, if there is time
+    HTML: list of questions, set of questions is a form
+    JAVASCRIPT: correct answers add to the score, submit button will automatically show score, timeout function at onload to automatically submit the quiz if timer runs out
+    CSS: colorful game page
 
 
     option functions:
@@ -20,3 +18,8 @@ Example:
 Features:
 -self scoring
 -questions/bullets are worth different points based on difficulty of the question
+
+Issues:
+
+-added a form radio button, but all were clicking. Added a name="" to make only one in a set clickable.
+-tried to change the css of the radio buttons but couldn't figure it out
