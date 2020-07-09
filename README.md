@@ -17,9 +17,12 @@ Example:
 
 Features:
 -self scoring
--questions/bullets are worth different points based on difficulty of the question
+-timer on the game and will submit after 2 minutes
+-pop-up showing score after submit button is clicked
 
 Issues:
 
 -added a form radio button, but all were clicking. Added a name="" to make only one in a set clickable.
 -tried to change the css of the radio buttons but couldn't figure it out
+-made a bunch of commits to the wrong repo
+-Would like to make more css features time permitting
