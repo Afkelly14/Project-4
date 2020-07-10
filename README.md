@@ -14,6 +14,7 @@ This project will utilize **html, css, javascript** to create a _self-scoring_ t
     end game function
 
 The completed trivia game can be played here: https://afkelly14.github.io/Project-4/
+You have 2 minutes to complete the quiz. The quiz will automatically be submitted and restart after 2 minutesl
 
 # Features:
 

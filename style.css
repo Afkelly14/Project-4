@@ -43,11 +43,6 @@ button {
   font-family: "Bowlby One SC", cursive;
 }
 
-.start-over {
-  color: black;
-  z-index: 10;
-}
-
 @media screen and (max-width: 700px) {
   body {
     align-content: center;
@@ -61,5 +56,12 @@ button {
 
   body {
     font-size: 10px;
+  }
+
+  input[type="radio"] {
+    border: 4px;
+    width: 6px;
+    height: 6px;
+    float: left;
   }
 }
