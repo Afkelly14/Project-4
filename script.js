@@ -39,8 +39,11 @@ submitButton.addEventListener("click", submitGame);
 
 function submitGame() {
   popUp.innerText = `Your Score Is ${score}`;
-  popUp.style.opacity = 1;
-  console.log(popUp.innerText);
+  if (score >= 100) {
+    popUp.innerText = `Your score is 100`
+    popUp.style.opacity = 1;
+    console.log(popUp.innerText);
+  }
 }
 
 /*on loadl function*/
