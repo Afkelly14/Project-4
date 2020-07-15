@@ -44,6 +44,8 @@ button {
 }
 
 .restart {
+  background-color: black;
+  color: yellow;
 }
 
 @media screen and (max-width: 700px) {

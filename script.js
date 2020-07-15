@@ -15,6 +15,8 @@ let Questions = document.querySelectorAll(".Questions");
 
 let submitButton = document.querySelector("button");
 
+let restartButton = document.querySelector(".restart");
+
 console.log(answers.length);
 console.log(correct);
 
@@ -34,6 +36,7 @@ for (i = 0; i < correct.length; i++) {
 
 let popUp = document.querySelector(".final-score");
 submitButton.addEventListener("click", submitGame);
+restartButton.addEventListener("click", restartGame);
 
 /*window with score pops up*/
 
@@ -49,9 +52,9 @@ function submitGame() {
 
 /*function to restart the game when restart button clicked*/
 
-// function restartGame() {
-
-// }
+function restartGame() {
+  window.location.reload();
+}
 
 /*on loadl function*/
 window.onload = alert("You have 2 minutes to complete this quiz!");
