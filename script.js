@@ -39,12 +39,19 @@ submitButton.addEventListener("click", submitGame);
 
 function submitGame() {
   popUp.innerText = `Your Score Is ${score}`;
+  popUp.style.opacity = 1;
   if (score >= 100) {
-    popUp.innerText = `Your score is 100`
+    popUp.innerText = `Your score is 100`;
     popUp.style.opacity = 1;
     console.log(popUp.innerText);
   }
 }
+
+/*function to restart the game when restart button clicked*/
+
+// function restartGame() {
+
+// }
 
 /*on loadl function*/
 window.onload = alert("You have 2 minutes to complete this quiz!");

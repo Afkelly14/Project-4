@@ -43,6 +43,9 @@ button {
   font-family: "Bowlby One SC", cursive;
 }
 
+.restart {
+}
+
 @media screen and (max-width: 700px) {
   body {
     align-content: center;
