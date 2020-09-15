@@ -17,7 +17,7 @@ header {
 }
 
 body {
-  background-image: linear-gradient(to left, pink, lightblue);
+  background:white;
   font-family: "Open Sans Condensed", sans-serif;
   padding: 0 0 0 20px;
 }

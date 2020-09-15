@@ -28,7 +28,7 @@ for (i = 0; i < correct.length; i++) {
   correctAnswer.addEventListener("click", itsCorrect);
 
   function itsCorrect(e) {
-    score += 10;
+    score += 1;
   }
 }
 
