@@ -43,7 +43,7 @@ restartButton.addEventListener("click", restartGame);
 function submitGame() {
   popUp.innerText = `Your Score Is ${score}`;
   popUp.style.opacity = 1;
-  if (score >= 100) {
+  if (score = 100) {
     popUp.innerText = `Your score is 100`;
     popUp.style.opacity = 1;
     console.log(popUp.innerText);
@@ -75,6 +75,3 @@ function timer() {
 /*on loadl function*/
 window.onload = alert("You have 3 minutes to complete this quiz! The timer will begin once you click 'OK'");
 
-// /*timeout function*/
-
-// window.setTimeout(submitGame, 100000);

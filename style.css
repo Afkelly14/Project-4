@@ -1,31 +1,55 @@
 .Answers {
-  padding: 0 0 0 5%;
+  padding: 0 0 0 20%;
 }
 
 .Correct {
-  padding: 5px;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .Incorrect {
-  padding: 5px;
+  padding: 10px;
+  font-size: 18px;
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-family: "Bowlby One SC", cursive;
   font-size: 50px;
   text-align: center;
+  justify-content: center;
+}
+
+p {
+  padding: 1% 0% 1% 10%;
+  font-size: 25px;
 }
 
 body {
-  background:white;
+  background: white;
   font-family: "Open Sans Condensed", sans-serif;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 50px;
 }
 
 button {
-  background-color: gold;
+  background-color: red;
   font-family: "Bowlby One SC", cursive;
-  margin-top: 5%;
+  color: white;
+  padding: 1%;
+  margin: 5%;
+}
+
+.final-score {
+  color: black;
+  text-shadow: 5px 5px 20px white;
+}
+
+.close {
+  color: black;
+  size: 20px;
+  z-index: 10;
 }
 
 .final-score {
@@ -33,8 +57,19 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 3rem;
-  background-color: rgba(220, 20, 60, 0.7);
+  padding: 10rem;
+ 
+  background-image: linear-gradient(0deg, #3c3b6e, #3c3b6e),
+    repeating-linear-gradient(
+      180deg,
+      #b22234,
+      #b22234 7.7%,
+      white 7.7%,
+      white 15.4%
+    );
+  background-size: 40% 53.85%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
   text-align: center;
   opacity: 0;
   pointer-events: none;
@@ -44,8 +79,13 @@ button {
 }
 
 .restart {
-  background-color: black;
-  color: yellow;
+  background-color: blue;
+  color: white;
+}
+
+img {
+  height: 100px;
+  width: auto;
 }
 
 @media screen and (max-width: 700px) {
