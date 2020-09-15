@@ -28,7 +28,7 @@ for (i = 0; i < correct.length; i++) {
   correctAnswer.addEventListener("click", itsCorrect);
 
   function itsCorrect(e) {
-    score += 1;
+    score += 10;
   }
 }
 
@@ -56,9 +56,25 @@ function restartGame() {
   window.location.reload();
 }
 
+let count=180
+
+let counter = setInterval(timer, 1000);
+
+function timer() {
+  count=count - 1;
+  if (count <=0) 
+  {
+    clearInterval(counter);
+    submitGame();
+    popUp.innerText = `Your Score Is ${score}`;
+    return;
+  }
+  document.getElementById("timer").innerHTML=count + " seconds left";
+}
+
 /*on loadl function*/
-window.onload = alert("You have 2 minutes to complete this quiz!");
+window.onload = alert("You have 3 minutes to complete this quiz! The timer will begin once you click 'OK'");
 
-/*timeout function*/
+// /*timeout function*/
 
-window.setTimeout(submitGame, 100000);
+// window.setTimeout(submitGame, 100000);
